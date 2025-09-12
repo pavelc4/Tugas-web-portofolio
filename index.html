@@ -1,11 +1,87 @@
 <!doctype html>
-<html>
+<html lang="id" data-theme="mytheme">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
   <link href="/src/output.css" rel="stylesheet">
 </head>
-<body>
-<script src="/src/main.js"></script>
+<body class="font-mono">
+
+  <!-- NAVBAR -->
+  <nav class="navbar bg-base-100 shadow-sm px-6">
+    <div class="navbar-start">
+      <a class="btn btn-ghost text-xl">Pavelc4</a>
+    </div>
+
+    <!-- Desktop menu: only on large screens (>=1024px) -->
+    <div class="navbar-center hidden lg:flex flex-1 justify-end">
+      <ul class="menu menu-horizontal px-2 whitespace-nowrap">
+        <li><a href="#">home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">tech</a></li>
+        <li><a href="#">certificate</a></li>
+      </ul>
+    </div>
+
+    <!-- Hamburger: on mobile/tablet/medium -->
+    <div class="navbar-end lg:hidden">
+      <div class="dropdown dropdown-end">
+        <button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </button>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+          <li><a href="#">home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">tech</a></li>
+          <li><a href="#">certificate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="min-h-screen flex items-center bg-base-100 px-4 md:px-8">
+
+    <!-- Hero Text -->
+    <div>
+        <p class="text-sm font-medium text-base-content/60 tracking-wide mb-2">
+          Welcome stranger
+        </p>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-left ">
+          Hi, I'm <span class="">Dimas Dwi Ariyanto</span><br>
+          <span class="text-base-content font-semibold">Beginner </span>
+          <span class="text-base-content font-bold">Backend Developer</span>
+        </h1>
+        <p class="text-base text-base-content/70 mb-8 text-left">
+          Hello everyone, I am a beginner in backend development. Currently, I am focusing on learning Golang.
+        </p>
+        <div class="flex items-center gap-6 mb-10">
+          <a href="https://github.com/pavelc4" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="/asset/github-mark.svg" alt="GitHub" class="w-6 h-6" />
+          </a>
+          <a href="https://t.me/Pavellc" target="_blank" rel="noopener" aria-label="Telegram">
+            <img src="/asset/telegram.svg" alt="Telegram" class="w-6 h-6" />
+          </a>
+          <a href="https://www.instagram.com/dimbaee" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="/asset/instagram.svg" alt="Instagram" class="w-6 h-6" />
+          </a>
+        </div>
+        <a href="#about" class="btn">
+          About Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
 </body>
 </html>
