@@ -1,181 +1,273 @@
 <!doctype html>
 <html lang="id" data-theme="mytheme">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
-  <link href="/src/output.css" rel="stylesheet">
+  <link href="/src/output.css" rel="stylesheet" />
 </head>
 <body class="font-mono">
 
   <!-- NAVBAR -->
   <nav class="navbar bg-base-100 shadow-sm px-6">
     <div class="navbar-start">
-      <a class="btn btn-ghost text-xl">Pavelc4</a>
+      <a class="btn btn-ghost text-xl" href="#hero">Pavelc4</a>
     </div>
-
     <div class="navbar-center hidden lg:flex flex-1 justify-end">
       <ul class="menu menu-horizontal px-2 whitespace-nowrap">
-        <li><a href="#">home</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">certificate</a></li>
+        <li><a href="#hero">home</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#certification">certificate</a></li>
+        <li><a href="#devices-tools">devices & tools</a></li>
       </ul>
     </div>
-
-    <!-- Hamburger: on mobile/tablet/medium -->
+    <!-- Hamburger mobile/tablet -->
     <div class="navbar-end lg:hidden">
       <div class="dropdown dropdown-end">
         <button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Toggle menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-base-content" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
           </svg>
         </button>
         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
-          <li><a href="#">home</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">certificate</a></li>
+          <li><a href="#hero">home</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#certification">certificate</a></li>
+          <li><a href="#devices-tools">devices & tools</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<section class="min-h-screen flex items-center bg-base-100 px-4 md:px-8">
-
+  <section id="hero" class="min-h-screen flex items-center bg-base-100 px-4 md:px-8">
     <!-- Hero Text -->
     <div>
-        <p class="text-sm font-medium text-base-content/60 tracking-wide mb-2">
-          Welcome stranger
-        </p>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-left ">
-          Hi, I'm <span class="">Dimas Dwi Ariyanto</span><br>
-          <span class="text-base-content font-semibold">Beginner </span>
-          <span class="text-base-content font-bold">Backend Developer</span>
-        </h1>
-        <p class="text-base text-base-content/70 mb-8 text-left">
-          Hello everyone, I am a beginner in backend development. Currently, I am focusing on learning Golang.
-        </p>
-        <div class="flex items-center gap-6 mb-10">
-          <a href="https://github.com/pavelc4" target="_blank" rel="noopener" aria-label="GitHub">
-            <img src="/asset/github-mark.svg" alt="GitHub" class="w-6 h-6" />
-          </a>
-          <a href="https://t.me/Pavellc" target="_blank" rel="noopener" aria-label="Telegram">
-            <img src="/asset/telegram.svg" alt="Telegram" class="w-6 h-6" />
-          </a>
-          <a href="https://www.instagram.com/dimbaee" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="/asset/instagram.svg" alt="Instagram" class="w-6 h-6" />
-          </a>
-        </div>
+      <p class="text-sm font-medium text-base-content/60 tracking-wide mb-2">Welcome stranger</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-left">
+        Hi, I'm <span>Dimas Dwi Ariyanto</span><br />
+        <span class="text-base-content font-semibold">Beginner </span>
+        <span class="text-base-content font-bold">Backend Developer</span>
+      </h1>
+      <p class="text-base text-base-content/70 mb-8 text-left">
+        Hello everyone, I am a beginner in backend development. Currently, I am focusing on learning Golang.
+      </p>
+      <div class="flex items-center gap-6 mb-10 text-base-content">
+        <a href="https://github.com/pavelc4" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.493.998.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.334-5.467-5.932 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.51 11.51 0 013.003-.403c1.02.004 2.047.138 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.63-5.48 5.928.43.372.813 1.103.813 2.222 0 1.606-.015 2.896-.015 3.286 0 .32.217.694.825.576C20.565 21.796 24 17.298 24 12c0-6.628-5.372-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://t.me/Pavellc" target="_blank" rel="noopener" aria-label="Telegram" class="hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 240 240" >
+            <path d="M120 0c-66.273 0-120 53.727-120 120s53.727 120 120 120 120-53.727 120-120S186.273 0 120 0zm61.794 86.634l-19.017 89.059c-1.44 6.345-5.197 7.927-10.527 4.931l-29.127-21.498-14.043 13.543c-1.552 1.552-2.853 2.853-5.845 2.853l2.078-29.712 53.978-48.705c2.347-2.078-.51-3.24-3.636-1.162l-66.734 41.868-28.735-8.972c-6.23-1.94-6.348-6.23 1.314-9.24l112.582-43.282c5.21-2.03 9.793 1.259 8.963 9.152z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/dimbaee" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-primary transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 512 512">
+            <path d="M349.33 69.33H162.67C104.91 69.33 58.67 115.57 58.67 173.33v186.67c0 57.76 46.24 104 104 104h186.67c57.76 0 104-46.24 104-104V173.33c0-57.76-46.24-104-104-104zM464 360c0 63.13-23.3 96-96 96H144c-62.7 0-96-23.3-96-96V152c0-63 23.3-96 96-96h224c63 0 96 23 96 96z"/>
+            <circle cx="256" cy="256" r="80"/>
+            <circle cx="393.6" cy="118.4" r="17.07"/>
+          </svg>
+        </a>
       </div>
+
+      <a href="#about" class="btn">About me</a>
     </div>
   </section>
 
+  <!-- About Me Section -->
+  <div id="about" class="card w-full max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto bg-base-200 shadow-xl mt-16 px-8 py-6">
+    <div class="card-body">
+      <h2 class="card-title text-3xl mb-3">About Me</h2>
+    <p class="mb-4">
+  Haii, aku Dimas Dwi Ariyanto. Aku sangat tertarik di bidang backend development dan pengembangan API. Selain itu, aku juga antusias di pengembangan Android, terutama sebagai maintrainer custom kernel berbasis LineageOS yang aku maintain untuk kebutuhan pribadi, bukan untuk publik. Aku juga suka mendevelop custom ROM, yang juga menjadi bagian dari hobiku.<br /><br />
+  
+  Aku aktif mengikuti perkembangan Linux kernel, yang merupakan inti dari banyak sistem operasi seperti Android dan berbagai distribusi Linux. Selain itu, aku selalu mengikuti update perkembangan teknologi AI, mulai dari model terbaru hingga berbagai inovasi baru yang hadir.<br /><br />
+  
+  Ketertarikan di backend, Android, Linux kernel, dan AI membuat aku terus semangat untuk belajar, bereksperimen, dan beradaptasi dengan teknologi-teknologi terbaru di dunia.<br /><br />
+
+</p>
+
+      <div class="card-actions flex flex-wrap gap-3">
+        <span class="badge badge-outline">Backend Dev</span>
+        <span class="badge badge-outline">Linux Kernel</span>
+        <span class="badge badge-outline">Self-hosting</span>
+        <span class="badge badge-outline">Android</span>
+        <span class="badge badge-outline">Aosp</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Projects Section -->
-<div class="container mx-auto p-6">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="/asset/bot-tele.jpg" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">Telegram Bot</h2>
-        <p>A simple yet powerful Telegram bot to download media from various social media platforms. Just send a link and the bot will handle the rest.</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://t.me/aetherprjkt_bot">Visit</a>
-          </button>
-           <button class="btn">
-             <a href="https://github.com/pavelc4/aether-tg-bot">Source</a>
-          </button>
-        </div>
-      </div>
-    </div>
+  <div id="projects" class="container mx-auto p-6 mt-12">
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body p-8">
+        <h2 class="card-title text-2xl mb-6">Projects</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+            <figure class="lg:w-1/3 bg-gray-50">
+              <img src="/asset/bot-tele.jpg" alt="Album" class="w-full h-48 lg:h-full object-contain" />
+            </figure>
+            <div class="card-body lg:w-2/3">
+              <h2 class="card-title">Telegram Bot</h2>
+              <p>
+                A simple yet powerful Telegram bot to download media from various social media platforms. Just send a link and the bot will handle the rest.
+              </p>
+              <div class="card-actions justify-end gap-2">
+                <a href="https://t.me/aetherprjkt_bot" class="btn">Visit</a>
+                <a href="https://github.com/pavelc4/aether-tg-bot" class="btn">Source</a>
+              </div>
+            </div>
+          </div>
 
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="/asset/yukperpus.jpg" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">YukPerpus</h2>
-        <p>Library management system built in Laravel 12</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://github.com/Gustyx-Power/YukPerpus">Source</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="/asset/waroeng_madura.png" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">WaroengMadura</h2>
-        <p>Point of sales built in Laravel 12</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://github.com/pavelc4/Waroeng-Madura">Source</a>
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="/asset/android.webp" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">Custom Kernel</h2>
-        <p>Custom Kernel For Poco F5 or SM8450 family</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://github.com/pavelc4-playground/kernel_xiaomi_sm8450">Source</a>
-          </button>
-        </div>
-      </div>
-    </div>
+          <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+            <figure class="lg:w-1/3 bg-gray-50">
+              <img src="/asset/yukperpus.jpg" alt="Album" class="w-full h-48 lg:h-full object-contain" />
+            </figure>
+            <div class="card-body lg:w-2/3">
+              <h2 class="card-title">YukPerpus</h2>
+              <p>Library management system built in Laravel 12</p>
+              <div class="card-actions justify-end">
+                <a href="https://github.com/Gustyx-Power/YukPerpus" class="btn">Source</a>
+              </div>
+            </div>
+          </div>
 
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="./asset/android.webp" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">Custom ROM Maintainer</h2>
-        <p>Maintainer custom ROM on Poco F5 aka marble</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://t.me/PocoF5IDUpdates/2488">Source</a>
-          </button>
-        </div>
-      </div>
-    </div>
+          <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+            <figure class="lg:w-1/3 bg-gray-50">
+              <img src="/asset/waroeng_madura.png" alt="Album" class="w-full h-48 lg:h-full object-contain" />
+            </figure>
+            <div class="card-body lg:w-2/3">
+              <h2 class="card-title">WaroengMadura</h2>
+              <p>Point of sales built in Laravel 12</p>
+              <div class="card-actions justify-end">
+                <a href="https://github.com/pavelc4/Waroeng-Madura" class="btn">Source</a>
+              </div>
+            </div>
+          </div>
 
-    <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
-      <figure class="lg:w-1/3 bg-gray-50">
-        <img src="/asset/android.webp" 
-             alt="Album" class="w-full h-48 lg:h-full object-contain" />
-      </figure>
-      <div class="card-body lg:w-2/3">
-        <h2 class="card-title">Xtra Kernel Manager</h2>
-        <p>Co Founder</p>
-        <p>Xtra Kernel Manager is a modern app, rooted Android application built with Kotlin and Jetpack Compose, designed for real-time monitoring and tuning of CPU performance, thermal behavior, and power-saving configurations on devices running custom kernels.</p>
-        <div class="card-actions justify-end">
-          <button class="btn">
-             <a href="https://github.com/Gustyx-Power/Xtra-Kernel-Manager">Source</a>
-          </button>
+          <div class="card lg:card-side bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+            <figure class="lg:w-1/3 bg-gray-50">
+              <img src="/asset/android.webp" alt="Album" class="w-full h-48 lg:h-full object-contain" />
+            </figure>
+            <div class="card-body lg:w-2/3">
+              <h2 class="card-title">Chandelier Kernel</h2>
+              <p>This kernel is specially developed for Poco F5 devices and the entire SM8450 chipset family. It is based on Linux 5.10 and used in LineageOS builds for multiple Xiaomi devices such as waipio and parrot.</p>
+              <div class="card-actions justify-end">
+                <a href="https://github.com/pavelc4-playground/kernel_xiaomi_sm8450" class="btn">Source</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Certification Section -->
+  <div id="certification" class="card bg-base-200 shadow-xl mt-16 max-w-5xl mx-auto p-8">
+    <div class="card-body">
+      <h2 class="card-title text-2xl mb-8">Certification</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+          <figure class="bg-gray-50 py-4">
+            <img src="/asset/dicoding.jpeg" alt="Sertifikasi Backend" class="w-full h-auto object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-lg">beginer Backend Developer Certificate</h3>
+            <p class="text-sm">Dicoding – Java Script</p>
+            <p class="text-xs text-gray-500">2025</p>
+            <div class="card-actions justify-end">
+              <a href="https://drive.google.com/file/d/19GXsQJsxFOAarCp6wKadCnNLkJ2JN1nR/view?usp=sharing" target="_blank" class="btn btn-sm">View</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+          <figure class="bg-gray-50 py-4">
+            <img src="/asset/dicoding.jpeg" alt="Sertifikasi DevOps" class="w-full h-auto object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-lg">Belajar Dasar Pemrograman JavaScript</h3>
+            <p class="text-sm">Dicoding  – Java script</p>
+            <p class="text-xs text-gray-500">204</p>
+            <div class="card-actions justify-end">
+              <a href="https://drive.google.com/file/d/1660_RWAQJ0QxqBn4Jhgpcyn-mMo0d9u6/view?usp=sharing" target="_blank" class="btn btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+          <figure class="bg-gray-50 py-4">
+            <img src="/asset/dicoding.jpeg" alt="Sertifikasi DevOps" class="w-full h-auto object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-lg">Belajar Dasar Pemrograman Web</h3>
+            <p class="text-sm">Dicoding  – Java Script </p>
+            <p class="text-xs text-gray-500">2024</p>
+            <div class="card-actions justify-end">
+              <a href="https://drive.google.com/file/d/1Uprnv2JtILiFxPhxDSVYJrVIjhkGlfvO/view?usp=sharing" target="_blank" class="btn btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+          <figure class="bg-gray-50 py-4">
+            <img src="/asset/dicoding.jpeg" alt="Sertifikasi DevOps" class="w-full h-auto object-contain" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-lg">Front end Development </h3>
+            <p class="text-sm">Dicoding – Java Script</p>
+            <p class="text-xs text-gray-500">2024</p>
+            <div class="card-actions justify-end">
+              <a href="https://drive.google.com/file/d/1oNz2BQpYeTnv-9yV5ZbwiYHlk3ZfFOcA/view?usp=sharing" target="_blank" class="btn btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools & Devices Section -->
+  <div id="devices-tools" class="card bg-base-200 shadow-xl mt-16 max-w-5xl mx-auto p-8">
+    <div class="card-body">
+      <h2 class="card-title text-2xl mb-8">Devices & Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Device List -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Devices I Use</h3>
+          <ul class="list-disc list-inside space-y-2 text-base-content/80">
+            <li>TufGaming - Cachyos Arch Base</li>
+            <li>Poco x6 5g aka Garnet </li>
+            <li>Poco F5 Aka Marble, Marbelin</li>
+          </ul>
+        </div>
+        <!-- Tools List -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Tools & Software</h3>
+          <ul class="list-disc list-inside space-y-2 text-base-content/80">
+            <li>Go (Golang)</li>
+            <li>JavaScript</li>
+            <li>PhP</li>
+            <li>Git</li>
+            <li>Git Hub</li>
+            <li>Docker</li>
+            <li>WebStrom</li>
+            <li>IntelliJ IDEA Comunnity</li>
+          </ul>
+        </div>
+        <!-- Equipment List -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Equipment</h3>
+          <ul class="list-disc list-inside space-y-2 text-base-content/80">
+            <li>Da Meca Rgb</li>
+            <li>Moon Drop Chu II</li>
+            <li> Styworth 2K 180Hz </li>
+            <li> Fantech VX7 Crypto</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
